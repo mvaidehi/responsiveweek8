@@ -1,0 +1,140 @@
+
+/* Navigation Top */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.current-page {
+    background-color: #4CAF50;
+}
+
+/*For Mobile Navigation*/
+@media screen and (max-width: 600px) {
+	.top-nav ul li{
+		width:100%;
+	}
+}
+
+
+/*Home*/
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 10px
+    font-family: Gotham Bold;
+    font-size: 16px;
+}
+
+.header {
+    text-align: center;
+    padding: 5px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/*Portfolio page*/
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 4px;
+    vertical-align: middle;
+}
+
+/* Responsive- Portfolio */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+
+/*Contact page form */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+	size: 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+
+
